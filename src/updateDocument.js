@@ -2,7 +2,17 @@ require('./database');
 const Course = require('./models/Course');
 
 async function updateCourse(id) {
-  const course = await Course.find({ _id: id });
+  const course = await Course.findByIdAndUpdate(
+    id,
+    {
+      $set: {
+        name: 'Novo nome de agorinha',
+        isPublished: false,
+        date: new Date('2019-12-24 00:00:00'),
+      },
+    },
+    { new: true },
+  );
   console.log(course);
 }
 

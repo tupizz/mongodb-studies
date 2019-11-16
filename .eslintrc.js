@@ -19,6 +19,8 @@ module.exports = {
     sourceType: 'module'
   },
   rules: {
+      'func-names': 'off',
+      'object-shorthand': 'off',
       'no-console': 'off',
       'prettier/prettier': 'error',
       'class-methods-use-this': 'off',
