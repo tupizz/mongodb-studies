@@ -5,10 +5,12 @@ module.exports = {
   },
   extends: [
     'airbnb-base',
-    'prettier'
+    'prettier',
+    'plugin:security/recommended'
   ],
   plugins: [
-      'prettier'
+      'prettier',
+      'security'
   ],
   globals: {
     Atomics: 'readonly',
