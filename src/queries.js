@@ -1,5 +1,6 @@
 require('./database');
 const Course = require('./models/Course');
+
 /**
  * Get all published courses that has tag backend
  * and sort them by their name in descending order
